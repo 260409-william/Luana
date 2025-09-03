@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Luana ✨🌸</title>
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <div class="stage" id="stage" role="button" aria-label="Toque para espalhar amor">
+    <div class="flower-wrap">
+      <!-- SVG da flor -->
+      <svg class="flower" viewBox="0 0 200 400" aria-label="Ramo de flor">
+        <ellipse class="glow" cx="100" cy="80" rx="40" ry="22" fill="var(--accent)"/>
+        <g class="stem-group">
+          <path d="M100 380 C100 320, 98 220, 100 120 C102 90, 104 70, 100 50"
+            stroke="var(--stem)" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path class="leaf l1" d="M98 250 C60 240, 50 215, 92 210 C92 220, 94 235, 98 250 Z" fill="var(--leaf)"/>
+          <path class="leaf l2" d="M102 210 C138 205, 150 182, 110 176 C108 188, 106 198, 102 210 Z" fill="var(--leaf)"/>
+          <path class="leaf l3" d="M98 170 C62 162, 48 142, 90 138 C92 148, 94 158, 98 170 Z" fill="var(--leaf)"/>
+          <path class="leaf l4" d="M102 138 C138 130, 150 112, 112 106 C110 118, 106 126, 102 138 Z" fill="var(--leaf)"/>
+        </g>
+        <g class="flower-head" transform="translate(100,45)">
+          <g>
+            <circle r="18" fill="var(--accent)" opacity=".95"/>
+            <g fill="var(--accent)">
+              <ellipse rx="10" ry="22" transform="rotate(0) translate(0,-26)"/>
+              <ellipse rx="10" ry="22" transform="rotate(45) translate(0,-26)"/>
+              <ellipse rx="10" ry="22" transform="rotate(90) translate(0,-26)"/>
+              <ellipse rx="10" ry="22" transform="rotate(135) translate(0,-26)"/>
+              <ellipse rx="10" ry="22" transform="rotate(180) translate(0,-26)"/>
+              <ellipse rx="10" ry="22" transform="rotate(225) translate(0,-26)"/>
+              <ellipse rx="10" ry="22" transform="rotate(270) translate(0,-26)"/>
+              <ellipse rx="10" ry="22" transform="rotate(315) translate(0,-26)"/>
+            </g>
+          </g>
+          <circle r="8" fill="#fff2"/>
+          <circle r="5" fill="#ffd166"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hint">Toque na tela ✨</div>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>
